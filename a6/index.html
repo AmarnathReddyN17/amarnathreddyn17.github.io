@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Temp6 - Arrays & Objects</title>
+</head>
+<body>
+  <h1>Amarnath's Temp 6</h1>
+  <h2>Working with Arrays and Functions</h2>
+
+  <script>
+    const myFruits = ["apple", "mango", "orange"];
+    // console.log(myFruits[0]);
+    // myFruits.push("banana");
+    // console.log(myFruits);
+    // myFruits.pop();
+    // console.log(myFruits);
+    // console.log("Total fruits:", myFruits.length);
+    // for (let index = 0; index < myFruits.length; index++) {
+    //   console.log(myFruits[index]);
+    // }
+    // myFruits.forEach((item) => console.log(item));
+
+    // const updatedFruits = myFruits.map((item) => item);
+    // console.log(updatedFruits);
+
+    // const filteredFruits = myFruits.filter((item) => item === "apple");
+    // console.log(filteredFruits);
+
+    // const foundFruit = myFruits.find((item) => item === "mango");
+    // console.log(foundFruit);
+
+    const scores = [4, 2, 1, 6, 7];
+    // scores.map((val) => console.log("SCORE_" + val));
+
+    // const scoreIDs = scores.map((val) => "SCORE_" + val);
+    // console.log(scoreIDs);
+
+    // const highScores = scores.filter((val) => val > 3);
+    // console.log(highScores);
+
+    // const firstHighScore = scores.find((val) => val > 3);
+    // console.log(firstHighScore);
+
+    // const totalScore = scores.reduce((acc, val) => acc + val);
+    // console.log(totalScore);
+
+    const sumAll = (...nums) => {
+      return nums.reduce((acc, val) => acc + val);
+    };
+
+    const finalResult = sumAll(4, 6, 7, 9, 3);
+    console.log("Final Sum:", finalResult);
+  </script>
+</body>
+</html>
