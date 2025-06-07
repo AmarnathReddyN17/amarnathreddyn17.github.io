@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="dvUsers"></div>
+    <script>
+      const url = "https://jsonplaceholder.typicode.com/users";
+      let str = "<div>";
+      fetch(url)
+        .then((res) => res.json())
+        .then((users) => {
+          users.map((user) => {
+            str += `<div>${user.name}</div>`;
+          });
+
+          dvUsers.innerHTML = str + "</div>";
+        });
+    </script>
+  </body>
+</html>
